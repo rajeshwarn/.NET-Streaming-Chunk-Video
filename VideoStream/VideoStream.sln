@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStreamLib", "VideoStream\VideoStreamLib.csproj", "{D7D94780-8CD2-44B7-80FE-62258C9AB0E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVideoStreamCaller", "TestVideoStreamCaller\TestVideoStreamCaller.csproj", "{95BADD0E-B7F4-4CD6-A34D-A74FF76F42DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStreamAPI", "VideoStreamAPI\VideoStreamAPI.csproj", "{E270D4A2-8860-4899-B396-CF2AF340CE8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D94780-8CD2-44B7-80FE-62258C9AB0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D94780-8CD2-44B7-80FE-62258C9AB0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D94780-8CD2-44B7-80FE-62258C9AB0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D94780-8CD2-44B7-80FE-62258C9AB0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BADD0E-B7F4-4CD6-A34D-A74FF76F42DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BADD0E-B7F4-4CD6-A34D-A74FF76F42DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BADD0E-B7F4-4CD6-A34D-A74FF76F42DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BADD0E-B7F4-4CD6-A34D-A74FF76F42DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E270D4A2-8860-4899-B396-CF2AF340CE8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E270D4A2-8860-4899-B396-CF2AF340CE8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E270D4A2-8860-4899-B396-CF2AF340CE8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E270D4A2-8860-4899-B396-CF2AF340CE8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
