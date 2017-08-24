@@ -16,7 +16,7 @@ namespace VideoStreamAPI.Controllers
         [HttpGet]
         public HttpResponseMessage Play(string f)
         {
-            return new VideoStream().StreamVideo(Path.Combine(@"C:\F2F\", f), base.Request.Headers.Range, 2);
+            return new VideoStream().StreamVideo(Path.Combine(@"C:\F2F\", f), base.Request.Headers.Range,1);
         }
     }
 }

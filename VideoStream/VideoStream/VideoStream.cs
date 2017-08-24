@@ -17,8 +17,7 @@ namespace VideoStreamLib
         #region Fields
 
         // This will be used in copying input stream to output stream.
-        public const int ReadStreamBufferSize = 1024 * 1024;
-
+        public static int  ReadStreamBufferSize = 1024 * 1024;
         public static readonly IReadOnlyDictionary<string, string> MimeNames;
 
 
@@ -48,6 +47,12 @@ namespace VideoStreamLib
         #endregion
         public HttpResponseMessage StreamVideo(string filePath, RangeHeaderValue rangeHeader, int chunkFileSizeMB = 0)
         {
+            // Add more buffer size follow by chunk file size
+            if (chunkFileSizeMB > 0)
+            {
+                ReadStreamBufferSize = chunkFileSizeMB * 2 * 1024 * 1024;
+            }
+
             // This can prevent some unnecessary accesses. 
             // These kind of file names won't be existing at all. 
             if (string.IsNullOrWhiteSpace(filePath))
@@ -204,7 +209,7 @@ namespace VideoStreamLib
                 }
                 catch (Exception error)
                 {
-                  //  throw new Exception(error.ToString());
+                    //  throw new Exception(error.ToString());
                 }
                 position = inputStream.Position;
                 remainingBytes = end - position + 1;
